@@ -5,9 +5,18 @@ import PokemonInfo from './components/PokemonInfo';
 import Home from './components/Home';
 import { useState, useEffect } from 'react'
 import './App.css'
+import axios from 'axios';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+
+  },[])
+
+  const getData = () => {
+
+  }
 
   return (
     <>
