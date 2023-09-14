@@ -7,6 +7,6 @@ const apiRouter = Router();
 apiRouter.use("/pokemon", pokemonRouter);
 
 // TMP ROUTE initial_load
-apiRouter.use("/initial_load", initialLoad);
+// apiRouter.use("/initial_load", initialLoad);
 
 export default apiRouter;
