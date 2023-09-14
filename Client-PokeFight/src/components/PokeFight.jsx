@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 
-function Pokefight({allPokemons, singlePokemon}) {
+function Pokefight({ allPokemons, singlePokemon }) {
   const [opponentPokemon, setOpponentPokemon] = useState(null);
   const [winner, setWinner] = useState(null);
 
@@ -11,24 +11,24 @@ function Pokefight({allPokemons, singlePokemon}) {
     setOpponentPokemon(contestant);
     setWinner(null);
   }, []);
- 
+
   return (
-    
+
     <div>
       {
         !allPokemons ?
-        <p>Loading...</p>
-        :
-        <div>
-          <h3>Battle!</h3>
-          { 
-            !singlePokemon ? <p>Loading contestant</p> :
-            <p>{singlePokemon.name}</p>
-          }
+          <p>Loading...</p>
+          :
+          <div>
+            <h3>Battle!</h3>
+            {
+              !singlePokemon ? <p>Loading contestant</p> :
+                <p>{singlePokemon.name}</p>
+            }
             !opponentPokemon ? <p>Loading opponent</p> :
             <p>{opponentPokemon.name}</p>
-          }
-        </div>
+
+          </div>
       }
     </div>
   );
