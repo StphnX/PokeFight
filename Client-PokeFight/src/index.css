@@ -90,3 +90,12 @@ header {
     margin: 20vh auto;
     padding: 10em;
 }
+
+
+/* .ring {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: aliceblue;
+    border-radius: 5px;
+} */

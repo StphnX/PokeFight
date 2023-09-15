@@ -8,6 +8,7 @@ import axios from 'axios';
 import { useState, useEffect } from 'react';
 import './App.css';
 import { ReactSearchAutocomplete } from 'react-search-autocomplete';
+import PokeCard from './components/PokeCard';
 
 function App() {
   const [pokemons, setPokemons] = useState([]);
@@ -80,6 +81,7 @@ function App() {
         <Route path='/api/pokemon/:id/' element={<Pokemon />} />
         <Route path='/api/pokemon/:id/:info/' element={<PokemonInfo />} />
         <Route path='/api/pokemon/:id/fight/' element={<PokeFight allPokemons={pokemons} singlePokemon={pokemonSelection} />} />
+        <Route path='/pokewinner/:winner/:pokedexId' element={<PokeCard allPokemons={pokemons}/>} />
       </Routes>
       <header>
         <h1>POKEMON FIGHT</h1>
