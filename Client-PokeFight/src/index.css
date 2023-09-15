@@ -99,3 +99,8 @@ header {
     background-color: aliceblue;
     border-radius: 5px;
 } */
+
+.fight-again-container {
+    position: absolute;
+    bottom: 0;
+}
